@@ -1,0 +1,75 @@
+@import "./mixins";
+@import "./normalize";
+@import "./animation";
+@import "./variables";
+//note IMPORT
+@font-face {
+  font-family: "IntroDemo";
+  src: url("../../public/fonts/IntroDemo-BlackCAPS.otf");
+  font-weight: 900; /* Black weight */
+}
+
+@font-face {
+  font-family: "IntroDemo";
+  src: url("../../public/fonts/IntroDemo-BlacklineCAPS.otf");
+  font-weight: 800; /* This is just a suggestion, adjust as needed */
+}
+
+@font-face {
+  font-family: "IntroDemoCond";
+  src: url("../../public/fonts/IntroDemoCond-BlackCAPS.otf");
+  font-weight: 900; /* Black weight */
+}
+
+@font-face {
+  font-family: "IntroDemoCond";
+  src: url("../../public/fonts/IntroDemoCond-LightCAPS.otf");
+  font-weight: 300; /* Light weight */
+}
+
+//note IMPORT FONT-FAMILY
+
+h2 {
+  font-family: var(--intro-demo-cond);
+  color: #FFF;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.container-footer-header {
+  margin: 0 auto;
+  max-width: 1480px;
+  width: 100%;
+  padding: 20px 0;
+
+  @include desktop {
+    max-width: 932px;
+  }
+
+  @include tablet {
+    max-width: 728px;
+  }
+
+  @include tablet-sm {
+    max-width: calc(100% - 40px);
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 100px 0;
+
+  @include desktop {
+    max-width: 932px;
+  }
+
+  @include tablet {
+    max-width: 728px;
+  }
+
+  @include tablet-sm {
+    max-width: calc(100% - 40px);
+  }
+}

@@ -1,0 +1,22 @@
+.navItems {
+  gap: 40px;
+}
+
+.navItems > * {
+  color: var(--text-default);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px; /* 171.429% */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--text-hover);
+    border-bottom: 1px solid var(--border-hover);
+  }
+}

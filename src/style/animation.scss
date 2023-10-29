@@ -1,0 +1,51 @@
+@-webkit-keyframes fade {
+
+  // animation opacity
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+
+  // animation opacity
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showSection {
+
+  // animation section
+  from {
+    opacity: 0.1;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes showSection {
+
+  // animation section
+  from {
+    opacity: 0.1;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
