@@ -1,0 +1,31 @@
+@import "../../style/mixins";
+
+.hero {
+  background: url("../../assets/image/hero-background.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  @include flex-all-center;
+}
+
+.title {
+  max-width: 520px;
+}
+
+.titleText {
+  //font-family: Intro Demo;
+  font-size: 128px;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.textWhite {
+  color: var(--text-default);
+  text-align: left;
+}
+
+.textOrange {
+  color: var(--text-selected);
+  width: max-content;
+  text-align: right;
+}
