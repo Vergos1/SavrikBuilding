@@ -24,4 +24,4 @@
 git clone https://github.com/your-username/SavrikBuilding.git
 cd SavrikBuilding
 npm install
-npm start
+npm run dev
