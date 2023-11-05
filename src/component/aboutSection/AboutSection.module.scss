@@ -1,0 +1,13 @@
+@import "../../style/mixins";
+.title {
+  text-align: center;
+}
+.description {
+  color: var(--text-default);
+  font-family: var(--roboto);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @include mb(24px);
+}

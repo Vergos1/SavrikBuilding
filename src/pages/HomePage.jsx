@@ -1,5 +1,7 @@
 import HeroSection from "../component/heroSection/HeroSection.jsx";
 import AboutSection from "../component/aboutSection/AboutSection.jsx";
+import VideoSection from "../component/videoSection/VideoSection.jsx";
+import CatalogSection from "../component/catalogSection/CatalogSection.jsx";
 
 
 
@@ -8,6 +10,8 @@ const HomePage = () => {
    <>
      <HeroSection/>
      <AboutSection/>
+     <VideoSection/>
+     <CatalogSection/>
    </>
   )
 }

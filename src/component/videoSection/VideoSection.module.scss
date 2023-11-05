@@ -1,0 +1,33 @@
+@import "../../style/mixins";
+.video {
+  background: url("../../assets/image/video-background.jpg") no-repeat center;
+  background-size: cover;
+}
+.wrapper {
+  @include flex-all-center;
+  flex-direction: column;
+  gap: 30px;
+}
+.titleItem {
+  text-align: center;
+}
+.description {
+  margin-top: 5px;
+  color: var(--text-secondary);
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-weight: 500;
+}
+.buttonPlay {
+  transition: 0.4s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.link {
+  color: var(--text-selected);
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-hover);
+}

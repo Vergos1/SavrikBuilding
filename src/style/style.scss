@@ -3,6 +3,7 @@
 @import "./animation";
 @import "./variables";
 //note IMPORT
+
 @font-face {
   font-family: "IntroDemo";
   src: url("../../public/fonts/IntroDemo-BlackCAPS.otf");
@@ -29,14 +30,22 @@
 
 //note IMPORT FONT-FAMILY
 
+
 h2 {
   font-family: var(--intro-demo-cond);
-  color: #FFF;
+  color: var(--text-default);
   font-size: 36px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
+  margin-bottom: 60px;
 }
+h3 {
+  color: var(--text-default);
+  font-family: var(--roboto);
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .container-footer-header {
   margin: 0 auto;
   max-width: 1480px;
@@ -55,6 +64,7 @@ h2 {
     max-width: calc(100% - 40px);
   }
 }
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -73,3 +83,4 @@ h2 {
     max-width: calc(100% - 40px);
   }
 }
+@import "UI/swiper";
