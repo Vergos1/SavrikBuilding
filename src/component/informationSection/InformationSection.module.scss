@@ -1,0 +1,40 @@
+@import "../../style/mixins";
+.information {
+  background: url("../../assets/image/information-section.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.wrapper {
+  @include flex-all-sb;
+  gap: 10%;
+}
+.rightColumn {
+  @include flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+  flex: 1;
+}
+.title, .titleOrange {
+  font-family: var(--intro-demo-cond);
+  font-size: 23.277px;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.title {
+  color: var(--text-default);
+}
+.titleOrange {
+  color: var(--text-selected);
+}
+.list {
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 20px;
+}
+.listItem {
+  list-style: disc;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24.139px;
+}

@@ -1,0 +1,120 @@
+@import "../../style/mixins";
+
+
+.stages {
+  background: url("../../assets/image/stages-section.jpg") no-repeat;
+  background-size: cover;
+}
+
+.buttonTab {
+  color: var(--text-default);
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  @include mb(40px);
+  padding: 20px 50px 20px 20px;
+  background: var(--button-tab-bg);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: -20px;
+    background: var(--main-bg);
+    z-index: 1;
+    height: 200px;
+    width: 40px;
+    transform: rotate(10deg);
+  }
+
+  //main rectangle (hover)
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -20px;
+    background: var(--main-bg);
+    height: 200px;
+    width: 40px;
+    transform: rotate(10deg);
+  }
+
+  &:hover {
+    background: var(--white-bg);
+    color: var(--text-black);
+
+    &:after {
+      transition: all 0.3s ease;
+      background: var(--button-tab-active-figure);
+    }
+  }
+}
+
+.active {
+  background: var(--white-bg);
+  color: var(--text-black);
+
+  &:after {
+    transition: all 0.3s ease;
+    background: var(--button-tab-active-figure);
+  }
+}
+
+.countTab {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+.viewTab {
+  will-change: transform;
+  background: rgba(247, 147, 26, 0.84);
+  padding: 100px;
+  border: 4px solid var(--border-white);
+  @include flex;
+  flex-direction: column;
+  align-items: start;
+
+  & > * {
+    transform: skewX(17deg);
+    -ms-transform: skewX(17deg);
+  }
+
+  transform: skewX(-17deg);
+  -ms-transform: skewX(-17deg);
+}
+
+
+.wrapper {
+  @include flex;
+  gap: 5%;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.container {
+  padding: 60px 0;
+}
+
+.leftColumn {
+  @include flex;
+  align-items: start;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.rightColumn {
+  max-width: 650px;
+}
+
+.title {
+  margin-bottom: 120px;
+}

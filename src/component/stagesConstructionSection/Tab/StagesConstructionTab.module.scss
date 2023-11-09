@@ -1,0 +1,19 @@
+@import "../../../style/mixins";
+
+.titleTab {
+  color: var(--text-black);
+  font-family: var(--roboto);
+  font-size: 27px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 100%;
+  margin-bottom: 50px;
+}
+
+.descTab {
+  color: var(--text-black);
+  font-family: var(--roboto);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+}

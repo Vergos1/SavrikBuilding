@@ -7,7 +7,7 @@ import {ReactComponent as PhoneIcon} from "../../assets/icon/phone-icon.svg"
 
 const AppHeader = () => {
   return (<header className={style.header}>
-    <div className="container-footer-header">
+    <div className="container-large">
       <div className={style.wrapper}>
         <div className={style.leftContent}>
           <MainLogo/>

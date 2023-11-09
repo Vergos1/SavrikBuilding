@@ -287,6 +287,8 @@ div {
 section {
   @include large-pc {
     min-height: max-content;
+    max-width: 2400px;
+    margin: auto;
   }
 
   overflow: hidden;

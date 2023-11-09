@@ -1,9 +1,15 @@
 @import "../../style/mixins";
 
+.catalog {
+  background: var(--section-bg);
+}
+
 .title {
   text-align: center;
 }
-
+.hiddenSlideWrapper {
+  cursor: pointer;
+}
 .wrapper {
   flex-direction: column;
 }
