@@ -16,7 +16,7 @@
 
 ## 🛠 Technology
 
-- **Frontend**: React, Scss, module.css, Vite
+- **Frontend**: React, Scss, module.css, Vite, Material-ui
 
 ## 📦 Installation
 
