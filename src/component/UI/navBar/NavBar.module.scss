@@ -1,7 +1,11 @@
 .navItems {
   gap: 40px;
 }
-
+.navItems {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+}
 .navItems > * {
   color: var(--text-default);
   text-align: center;
@@ -13,7 +17,6 @@
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
   transition: 0.2s ease;
-
   &:hover {
     cursor: pointer;
     color: var(--text-hover);

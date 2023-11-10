@@ -1,0 +1,75 @@
+@import "../../../style/mixins";
+
+.empty {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-default);
+  text-transform: uppercase;
+}
+
+.item {
+  @include flex-v-center;
+  flex-direction: column;
+  background: var(--item-bg);
+  border-radius: 10px;
+  padding: 24px;
+  border: 1px solid var(--border-secondary);
+  flex: 1;
+  height: 270px;
+  max-width: 470px;
+}
+
+.title {
+  margin-bottom: 28px;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  background: var(--white-bg);
+  width: 150px;
+  display: flex;
+  border-radius: 8px;
+  transition: border-color 0.25s ease-in-out;
+  padding: 8px 14px 8px 14px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  flex-grow: 1;
+
+  &:hover, &:focus, &:active {
+    border-color: var(--border-active);
+  }
+}
+
+.inputAddon {
+  position: absolute;
+  display: flex;
+  right: 2px; // Расстояние от правого края input
+  top: 0px;
+  bottom: 0px;
+  border-radius: 0 8px 8px 0;
+  align-items: center;
+  border-left: 2px solid #777;
+  padding: 0 8px; // Отступы внутри блока с единицами измерения
+  color: #777; // Цвет текста единиц измерения
+  background: white; // Фоновый цвет для единиц измерения
+  pointer-events: none; // Элемент не будет влиять на события мыши
+  // Добавьте любые другие стили для span, которые вам нужны
+  sup {
+    font-size: 10px;
+  }
+}
+
+.inputWrapper {
+  @include flex-all-sb;
+  margin: 8px;
+  gap: 16px;
+
+  label {
+    min-width: 140px;
+  }
+}

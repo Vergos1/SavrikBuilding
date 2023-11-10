@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 const NavBar = ({secondClass}) => {
   return (
    <nav>
-     <ul className={`${secondClass} ${style.navItems}`}>
+     <ul className={`${secondClass ? secondClass : ""} ${style.navItems}`}>
        <li>ОГЛЯД</li>
        <li>КАТАЛОГ</li>
        <li>ДОСТАВКА</li>

@@ -2,8 +2,7 @@ import "../../style/style.scss";
 import {Route, Routes} from "react-router-dom";
 import HomePage from "../../pages/HomePage.jsx";
 import Layout from "../Layout.jsx";
-import CatalogSection from "../catalogSection/CatalogSection.jsx";
-import Product from "../catalogSection/Product/Product.jsx";
+
 
 
 

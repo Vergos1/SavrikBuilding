@@ -60,9 +60,11 @@ const StagesConstructionSection = (props) => {
        <div className={style.wrapper}>
          <div className={style.leftColumn}>
            {buttonData.map((button, index) => (
-            <button type="button"
-                    className={`${style.buttonTab} ${activeTab === button.id ? style.active : ''}`} key={button.id}
-                    onClick={() => setActiveTab(button.id)}>
+            <button
+             key={button.id}
+             type="button"
+             className={`${style.buttonTab} ${activeTab === button.id && style.active}`}
+             onClick={() => setActiveTab(button.id)}>
               <span className={style.countTab}>{button.count}</span>
               {button.title}
             </button>

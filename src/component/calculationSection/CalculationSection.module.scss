@@ -1,0 +1,38 @@
+@import "../../style/mixins";
+
+.wrapper {
+  flex-direction: column;
+}
+
+.contentWrapper {
+  @include flex-v-center;
+  gap: 24px;
+  flex-wrap: wrap;
+  min-height: 300px;
+}
+
+.tabWrapper {
+  @include flex-v-center;
+  gap: 24px;
+  margin-bottom: 42px;
+}
+
+.tabButton {
+  height: 70px;
+  @include flex-v-center;
+  gap: 14px;
+  padding: 10px 24px;
+  background: var(--white-bg);
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  font-size: 18px;
+  font-weight: 500;
+
+  &:hover {
+    background-color: var(--button-bg);
+  }
+}
+
+.active {
+  background-color: var(--button-bg);
+}
