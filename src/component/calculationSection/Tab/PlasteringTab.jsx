@@ -87,9 +87,9 @@ const PlasteringTab = () => {
      </div>
      <div className={style.item}>
        <h3 className={style.title}>Фундамент</h3>
-       {FoundationData.map((selectData) => (
+       {FoundationData.map((selectData,index) => (
         <CustomSelect
-         key={selectData.id}
+         key={index}
          label={selectData.label}
          options={selectData.options}
          defaultValue={selectData.defaultValue}
@@ -98,9 +98,9 @@ const PlasteringTab = () => {
      </div>
      <div className={style.item}>
        <h3 className={style.title}>Стіни</h3>
-       {WallsData.map((selectData) => (
+       {WallsData.map((selectData, index) => (
         <CustomSelect
-         key={selectData.id}
+         key={index}
          label={selectData.label}
          options={selectData.options}
          defaultValue={selectData.defaultValue}

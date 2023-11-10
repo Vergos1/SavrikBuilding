@@ -11,8 +11,11 @@ export const CustomSelect = ({label, options, defaultValue}) => {
 
   return (
    <Box display="flex" alignItems="center" justifyContent="space-between" sx={{gap: 2, m: 1, minWidth: 120}}>
-     <InputLabel style={{color: 'var(--text-default)', overflow: 'visible', minWidth: 140}}
-                 id={`${label}-label`}>{label}</InputLabel>
+     <InputLabel
+      style={{color: 'var(--text-default)', overflow: 'visible', minWidth: 140}}
+      id={`${label}-label`}>
+       {label}
+     </InputLabel>
      <FormControl fullWidth>
        <Select
         labelId={`${label}-label`}
