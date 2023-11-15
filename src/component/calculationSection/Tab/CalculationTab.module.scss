@@ -11,6 +11,7 @@
   @include flex-v-center;
   flex-direction: column;
   background: var(--item-bg);
+  gap: 10px;
   border-radius: 10px;
   padding: 24px;
   border: 1px solid var(--border-secondary);
@@ -22,11 +23,11 @@
 .title {
   margin-bottom: 28px;
 }
-
 .inputGroup {
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .input {
@@ -37,12 +38,7 @@
   transition: border-color 0.25s ease-in-out;
   padding: 8px 14px 8px 14px;
   font-weight: 400;
-  border: 1px solid transparent;
   flex-grow: 1;
-
-  &:hover, &:focus, &:active {
-    border-color: var(--border-active);
-  }
 }
 
 .inputAddon {
@@ -66,8 +62,8 @@
 
 .inputWrapper {
   @include flex-all-sb;
-  margin: 8px;
   gap: 16px;
+  width: 100%;
 
   label {
     min-width: 140px;

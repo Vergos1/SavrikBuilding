@@ -1,4 +1,4 @@
-export const FoundationData = [
+export const foundationData = [
   {
     label: 'Тип фундамента:',
     options: [
@@ -54,7 +54,7 @@ export const FoundationData = [
 ];
 
 
-export const WallsData = [
+export const wallsData = [
   {
     label: 'Тип штукатурки:',
     options: [

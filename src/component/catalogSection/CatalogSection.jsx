@@ -107,7 +107,6 @@ const CatalogSection = () => {
   // product
   const [productOpen, setProductOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(null);
-  console.log(currentProduct);
 
   const productHandler = (product) => {
     setCurrentProduct(product);
@@ -139,7 +138,7 @@ const CatalogSection = () => {
              swiper.navigation.update();
            }}
            onSlideChange={() => console.log("slide change")}//!console.log(debug)
-           onSwiper={(swiper) => console.log(swiper)} //!console.log(debug)
+           // onSwiper={(swiper) => console.log(swiper)} //!console.log(debug)
           >
             <>
               {productData.map((item) => (

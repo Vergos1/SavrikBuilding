@@ -1,7 +1,7 @@
 import style from './CalculationTab.module.scss';
 import React, {useEffect, useRef, useState} from 'react';
 import {CustomSelect} from "../../UI/Select/CustomSelect.jsx";
-import {FoundationData, WallsData} from "../../../data/calculationData/calculationData.js";
+import {foundationData, wallsData} from "../../../data/calculationData/calculationData.js";
 import calculationPrice from "../../../utils/calculationPrice.js";
 import CalculationResultModal from "../Modal/CalculationResultModal.jsx";
 
@@ -87,24 +87,25 @@ const PlasteringTab = () => {
      </div>
      <div className={style.item}>
        <h3 className={style.title}>Фундамент</h3>
-       {FoundationData.map((selectData,index) => (
+       {foundationData.map((selectData,index) => (
         <CustomSelect
          key={index}
          label={selectData.label}
          options={selectData.options}
          defaultValue={selectData.defaultValue}
+
         />
        ))}
      </div>
      <div className={style.item}>
        <h3 className={style.title}>Стіни</h3>
-       {WallsData.map((selectData, index) => (
-        <CustomSelect
-         key={index}
-         label={selectData.label}
-         options={selectData.options}
-         defaultValue={selectData.defaultValue}
-        />
+       {wallsData.map((selectData, index) => (
+          <CustomSelect
+           key={index}
+           label={selectData.label}
+           options={selectData.options}
+           defaultValue={selectData.defaultValue}
+           />
        ))}
        <div className={style.inputWrapper}>
          <label htmlFor="input-thickness">Товщина:</label>

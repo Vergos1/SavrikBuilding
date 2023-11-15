@@ -8,6 +8,9 @@ const MaterialCustomConfig = createTheme({
     MuiSelect: {
       styleOverrides: {
         root: ({ownerState, theme}) => ({
+          margin: "0",
+          display: "flex",
+          justifyContent: 'space-between',
           fontWeight: 400,
           fontSize: 'var(--f-16)',
           lineHeight: '18px',
@@ -25,8 +28,6 @@ const MaterialCustomConfig = createTheme({
         }),
         select: ({ownerState, theme}) => ({
           backgroundColor: 'var(--white-bg)',
-          width: '150px',
-          display: 'flex',
           borderRadius: '8px',
           position: 'relative',
           transition: 'border-color 0.25s ease-in-out',
@@ -35,9 +36,6 @@ const MaterialCustomConfig = createTheme({
           padding: '8px 38px 8px 14px !important',
           boxSizing: 'border-box',
           fontWeight: '400',
-          '&:hover': {
-            borderColor: 'var(--border-active)',
-          },
           '&:active': {
             borderColor: 'var(--border-active)',
           },
@@ -58,6 +56,47 @@ const MaterialCustomConfig = createTheme({
       defaultProps: {
         variant: "standard",
         IconComponent: ArrowBottom,
+      },
+    },
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "var(--white-bg) !important",
+          borderRadius: "8px !important",
+          color: "#383736",
+          border: '1px solid transparent',
+        },
+        input: {
+          borderRadius: "8px !important",
+        }
+      }
+    },
+    MuiFormLabel: {
+      styleOverrides: {
+        root: ({ownerState}) => ({
+          color: "#CDCFDB",
+          '&:hover': {
+            cursor: 'default',
+            color: "#CDCFDB",
+          },
+          '&.Mui-focused': {
+            color: "#383736",
+          }
+        }),
+      },
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: () => ({
+          backgroundColor: "var(--white-bg)",
+          color: "#383736",
+          borderRadius: "8px",
+          border: '1px solid transparent',
+          '&:hover': {
+            cursor: 'default',
+            color: "#fff",
+          },
+        }),
       },
     },
     MuiFormControl: {

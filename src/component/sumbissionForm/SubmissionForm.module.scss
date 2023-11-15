@@ -1,0 +1,59 @@
+@import "../../style/mixins";
+
+.submissionFormWrapper {
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  padding: 28px 38px;
+
+  border-radius: 10px;
+  border: 1px solid var(--border-white);
+  background: #BCBCBC;
+}
+.title {
+  text-align: center;
+  color: var(--text-black);
+  font-family: var(--intro-demo-cond);
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 39px; /* 121.875% */
+  text-transform: uppercase;
+}
+.submissionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.wrapper {
+  border: 10px solid white !important;
+}
+.description {
+  text-align: center;
+  margin: 24px 0;
+}
+.footerButton {
+  width: 100%;
+  margin-top: 24px;
+}
+.lineForm {
+  position: absolute;
+  top: calc(50% - 300px);
+  left: -37px;
+}
+.contactsItem {
+  position: absolute;
+  left: -50px;
+  top: calc(50% - 50px);
+}
+.contactsItem > *{
+  display: block;
+  max-width: max-content;
+  @include mb(20px);
+}
+.contactIcon {
+  transition: all 0.4s ease;
+  &:hover {
+    transform: rotate(360deg);
+  }
+}
+
